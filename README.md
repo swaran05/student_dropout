@@ -1,86 +1,96 @@
-🎓 Student Dropout Prediction
-📌 Overview
+# 🎓 Student Dropout Prediction
 
-This project is a Machine Learning-based system that predicts whether a student is likely to drop out based on academic performance and personal attributes.
+---
 
-It helps institutions identify at-risk students early and take preventive actions to improve student retention.
+## 📌 Overview
+This project is a **Machine Learning-based system** that predicts whether a student is likely to drop out based on academic performance and personal attributes.
 
-🎯 Problem Statement
+It helps institutions identify **at-risk students early** and take preventive actions to improve student retention.
 
+---
+
+## 🎯 Problem Statement
 Student dropout is a major issue in education systems. Identifying students at risk in advance can help:
 
-Improve academic success
-Provide timely support
-Reduce dropout rates
+- Improve academic success  
+- Provide timely support  
+- Reduce dropout rates  
 
 This project builds a predictive model to solve this problem.
 
-🧠 Approach
+---
 
-The project follows a standard ML pipeline:
+## 🧠 Approach
 
-Data preprocessing
-Feature selection
-Handling imbalanced data using SMOTE
-Model training using Random Forest Classifier
-Model evaluation
-Prediction using custom input
-📊 Features Used
-Curricular units 1st sem (grade)
-Curricular units 2nd sem (grade)
-Age at enrollment
-Debtor status
-🌲 Model Used
+- Data preprocessing  
+- Feature selection  
+- Handling imbalanced data using **SMOTE**  
+- Model training using **Random Forest Classifier**  
+- Model evaluation  
+- Prediction using custom input  
 
-Random Forest Classifier
+---
 
-Why this model?
+## 📊 Features Used
 
-Handles non-linear data
-Reduces overfitting
-Works well with tabular datasets
-📈 Output
+- Curricular units 1st semester (grade)  
+- Curricular units 2nd semester (grade)  
+- Age at enrollment  
+- Debtor status  
 
-The model predicts:
+---
 
-Dropout (Yes / No)
-Probability of dropout (%)
-Risk level (Low / Medium / High)
-📂 Project Files
-README.md                 # Project documentation
-data.csv                  # Dataset
-dropout_prediction.ipynb  # Machine learning notebook
-⚙️ Installation & Setup
-Clone the repository:
-git clone https://github.com/your-username/student_dropout.git
+## 🌲 Model Used
+
+**Random Forest Classifier**
+
+---
+
+## 📈 Output
+
+- Dropout (Yes / No)  
+- Probability of dropout (%)  
+- Risk level (Low / Medium / High)  
+
+---
+
+## 📂 Project Structure
+
+
+student_dropout/
+├── README.md
+├── data.csv
+├── dropout.ipynb
+└── requirements.txt
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/swaran05/student_dropout.git
 cd student_dropout
-Install dependencies:
-pip install pandas numpy scikit-learn imbalanced-learn matplotlib
-Run the notebook:
+2️⃣ Install dependencies
+pip install -r requirements.txt
+3️⃣ Run the notebook
 jupyter notebook
 ▶️ Usage
-Open the notebook
+Open dropout.ipynb
 Run all cells
-Modify input values to test predictions
-
-Example input:
-
+Modify input values
+Example Input
 [12, 14, 20, 0]
 📊 Results
 Model performs well on test data
 Handles class imbalance using SMOTE
 Provides probability-based predictions
 🔥 Future Improvements
-Add more features for better accuracy
-Try advanced models (XGBoost, LightGBM)
-Build a Streamlit web app
-Deploy the project online
-Add visualization dashboard
-💡 Use Cases
-Colleges & Universities
-Academic advisors
-Student monitoring systems
-Educational analytics
+Add more features
+Try XGBoost / LightGBM
+Build Streamlit app
+Deploy online
 👨‍💻 Author
 
-Swaran
+Swaran Chandra
