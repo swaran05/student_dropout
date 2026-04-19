@@ -56,6 +56,21 @@ student_dropout/
 │── requirements.txt  
 
 ---
+📊 Model Performance
+
+- Accuracy: 85%
+- Precision (Dropout): 0.87
+- Recall (Dropout): 0.80
+- F1-score: 0.83
+
+Confusion Matrix:
+[[416  48]
+ [ 85 335]]
+
+🔍 Insights:
+- Model performs well overall with balanced precision and recall.
+- Slightly lower recall indicates some dropout cases are missed.
+- Future improvements can focus on increasing recall to better identify at-risk students.
 
 # ⚙️ Installation & Setup
 
